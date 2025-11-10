@@ -43,9 +43,8 @@ export   function LoginForm() {
       localStorage.setItem("email", user[0].email);
       localStorage.setItem("type", user[0].usertype);
       await new Promise((resolve) => setTimeout(resolve, 1000));
+    redirect("/aproval");
 
-      
-      
     }
 
     else if(user[0].usertype==2||user[0].password==password){
