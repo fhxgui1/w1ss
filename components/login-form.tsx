@@ -32,7 +32,7 @@ export   function LoginForm() {
     e.preventDefault();
     setIsLoading(true);
 
-    console.log("[v0] Login attempt:", { email, password });
+    // console.log("[v0] Login attempt:", { email, password });
     const user = await getUserByEmail(email);
 
 
